@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Instalment Planner — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header"><div class="brand"><img src="images/logo.png" class="logo"/><div><div class="site-title">Sun Solar</div><div class="site-sub">Estimate monthly payments</div></div></div>
+  <nav class="main-nav"><ul><li><a href="index.html">Home</a></li><li><a href="instalment-planner.html" class="active">Calculator</a></li></ul></nav>
+  <div id="userGreeting" class="user-greeting" style="display:none;">
+    <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+    <span id="greetingText"></span>
+    <button id="signOutBtn" class="signout-btn" style="display:none;">Sign Out</button>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Instalment Planner</h2>
+  <p class="muted">Calculate monthly payments based on amount, down payment, term and interest rate.</p>
+
+  <form id="instalmentForm" class="card">
+    <label>Amount (LKR)
+      <input id="amount" type="number" min="1" value="180000"/>
+    </label>
+    <label>Down Payment (LKR)
+      <input id="down" type="number" value="20000"/>
+    </label>
+    <label>Loan Term (months)
+      <input id="months" type="number" min="1" value="12"/>
+    </label>
+    <label>Annual Interest Rate (%)
+      <input id="rate" type="number" step="0.1" value="12"/>
+    </label>
+
+    <div class="form-actions">
+      <button id="calcBtn" type="button" class="btn">Calculate</button>
+      <button id="printBtn" type="button" class="btn outline" style="margin-left:8px">Print Plan</button>
+    </div>
+  </form>
+
+  <section id="result" class="card hidden">
+    <h3>Plan Summary</h3>
+    <div id="summary"></div>
+  </section>
+</main>
+
+<footer class="site-footer">© 2025 Sun Solar</footer>
+<script src="js/instalment-planner.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

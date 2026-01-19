@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Packages — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand"><img src="C:\Users\user\Desktop\SunSolarWebsite\images\sun.png" class="logo"/><div><div class="site-title">Sun Solar</div><div class="site-sub">Pre-configured packages</div></div></div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html" class="active">Packages</a></li>
+        <li><a href="quotation-calculator.html">Calculator</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+    </nav>
+    <div id="userGreeting" class="user-greeting" style="display:none;">
+      <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+      <span id="greetingText"></span>
+      <button id="signOutBtn" class="signout-btn" style="display:none;">Sign Out</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Packages & Prices</h2>
+    <p class="muted">Choose from our popular pre-configured systems. Click "Calculate Quote" to open the quotation calculator with the package pre-filled.</p>
+
+    <section class="packages-grid" style="margin-top:12px">
+      <article class="package">
+        <div style="flex:1">
+          <img src="C:\Users\user\Desktop\SunSolarWebsite\images\SMK.png" alt="Starter">
+          <h3>Starter Home Kit</h3>
+          <p class="small muted">Good for small homes & basic loads.</p>
+          <p class="price">LKR 180,000</p><br>
+          <div style="margin-top:8px">
+            <a class="btn" href="quotation-calculator.html?pkg=starter&panels=2&panelPrice=45000&inverterPrice=60000&installCost=15000">Calculate Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="package">
+        <div style="flex:1">
+          <img src="C:\Users\user\Desktop\SunSolarWebsite\images\HE.png" alt="Family">
+          <h3>Family Kit</h3>
+          <p class="small muted">6-panel system — medium household usage.</p>
+          <p class="price">LKR 450,000</p><br>
+          <div style="margin-top:8px">
+            <a class="btn" href="quotation-calculator.html?pkg=family&panels=6&panelPrice=40000&inverterPrice=120000&installCost=50000">Calculate Quote</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="package">
+        <div style="flex:1">
+          <img src="C:\Users\user\Desktop\SunSolarWebsite\images\CK.png" alt="Commercial">
+          <h3>Commercial Kit</h3>
+          <p class="small muted">12-panel system — small businesses.</p>
+          <p class="price">LKR 1,050,000</p><br>
+          <div style="margin-top:8px">
+            <a class="btn" href="quotation-calculator.html?pkg=commercial&panels=12&panelPrice=42000&inverterPrice=250000&installCost=120000">Calculate Quote</a>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Sun Solar</footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

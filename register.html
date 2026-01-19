@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Register — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand">
+    <img src="C:\Users\user\Desktop\SunSolarWebsite\images\sun.png" alt="Sun Solar Logo" class="logo"/>
+    <h1 class="site-title">Sun Solar</h1>
+  </div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html" class="active">Register</a></li>
+    </ul>
+  </nav>
+  <div id="userGreeting" class="user-greeting" style="display:none;">
+    <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+    <span id="greetingText"></span>
+    <button id="signOutBtn" class="signout-btn" style="display:none;">Sign Out</button>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Create Account</h2>
+  <form id="registerForm" class="card">
+    <label>Full Name
+      <input type="text" id="fullname" required />
+    </label>
+    <label>Username
+      <input type="text" id="username" required />
+    </label>
+    <label>Email
+      <input type="email" id="email" required />
+    </label>
+    <label>Address
+      <input type="text" id="address" />
+    </label>
+    <label>Password
+      <input type="password" id="password" required />
+    </label>
+    <div class="form-actions">
+      <button type="button" id="registerBtn" class="btn">Register</button>
+    </div>
+    <div id="registerMsg" class="muted"></div>
+  </form>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 Sun Solar</p>
+</footer>
+
+<script src="js/register.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

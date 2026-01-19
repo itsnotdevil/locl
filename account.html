@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Account — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="images/sun.png" class="logo"/>
+    <div>
+      <div class="site-title">Sun Solar</div>
+      <div class="site-sub">Account</div>
+    </div>
+  </div>
+  <div id="userGreeting" class="user-greeting" style="display:none;">
+    <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+    <span id="greetingText"></span>
+    <button id="signOutBtn" class="btn-gradient" style="display:none;">Sign Out</button>
+  </div>
+</header>
+<main class="container">
+  <h2>Account</h2>
+  <div class="tabs">
+    <button id="loginTab" class="btn-gradient" type="button">Login</button>
+    <button id="registerTab" class="btn-gradient" type="button">Register</button>
+  </div>
+  <div id="accountMsg" class="muted small" style="margin:12px 0;"></div>
+  <form id="loginSection" class="card">
+    <h3>Login</h3>
+    <label>Email
+      <input type="email" id="loginEmail" required>
+    </label>
+    <label>Password
+      <input type="password" id="loginPassword" required>
+    </label>
+    <button type="submit" id="loginBtn" class="btn-gradient">Login</button>
+  </form>
+  <form id="registerSection" class="card" style="display:none;">
+    <h3>Register</h3>
+    <label>Full Name
+      <input type="text" id="regFullname" required>
+    </label>
+    <label>Username
+      <input type="text" id="regUsername" required>
+    </label>
+    <label>Email
+      <input type="email" id="regEmail" required>
+    </label>
+    <label>Password
+      <input type="password" id="regPassword" required>
+    </label>
+    <button type="submit" id="registerBtn" class="btn-gradient">Register</button>
+  </form>
+  <button id="adminLoginBtn" class="btn-gradient" style="margin-top:16px;">Admin Login</button>
+  <div id="adminModal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h3>Admin Panel Login</h3>
+      <label>Admin Username
+        <input type="text" id="adminUsername" required>
+      </label>
+      <label>Admin Password
+        <input type="password" id="adminPassword" required>
+      </label>
+      <button id="adminPanelLoginBtn" class="btn-gradient">Login</button>
+      <button id="closeAdminModal" class="btn-gradient">Cancel</button>
+      <div id="adminMsg" class="muted small" style="margin-top:8px"></div>
+    </div>
+  </div>
+</main>
+<script src="js/account.js"></script>
+</body>
+</html>

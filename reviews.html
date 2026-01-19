@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Reviews — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header"><div class="brand"><img src="C:\Users\user\Desktop\SunSolarWebsite\images\sun.png" class="logo"/><div><div class="site-title">Sun Solar</div><div class="site-sub">Customer feedback</div></div></div>
+  <nav class="main-nav"><ul><li><a href="index.html">Home</a></li><li><a href="reviews.html" class="active">Reviews</a></li></ul></nav>
+  <div id="userGreeting" class="user-greeting" style="display:none;">
+    <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+    <span id="greetingText"></span>
+    <button id="signOutBtn" class="signout-btn" style="display:none;">Sign Out</button>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Customer Reviews</h2>
+  <p class="muted">Read real feedback from customers and leave your own review.</p>
+
+  <section class="card" style="margin-top:12px">
+    <h3>Leave a review</h3><br>
+    <label>Name
+      <input id="reviewerName" placeholder="Your name (optional)"/>
+    </label>
+    <label>Rating
+      <select id="rating">
+        <option value="5">⭐⭐⭐⭐⭐ — Excellent</option>
+        <option value="4">⭐⭐⭐⭐ — Good</option>
+        <option value="3">⭐⭐⭐ — Average</option>
+        <option value="2">⭐⭐ — Poor</option>
+        <option value="1">⭐ — Terrible</option>
+      </select>
+    </label>
+    <label>Comment
+      <textarea id="comment" rows="3" placeholder="Write your experience..."></textarea>
+    </label>
+    <div class="form-actions">
+      <button id="submitReview" class="btn">Submit Review</button>
+    </div>
+  </section>
+
+  <section class="card" style="margin-top:12px">
+    <h3>All Reviews</h3>
+    <div id="reviewsList"></div>
+  </section>
+</main>
+
+<footer class="site-footer">© 2025 Sun Solar</footer>
+<script src="js/reviews.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

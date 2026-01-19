@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Admin Panel — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <img src="images/sun.png" class="logo"/>
+    <div>
+      <div class="site-title">Sun Solar</div>
+      <div class="site-sub">Admin Panel</div>
+    </div>
+  </div>
+</header>
+<main class="container">
+  <h2>User Management</h2>
+  <div id="adminMsgBox" style="margin-bottom: 12px;"></div>
+  <input type="text" id="searchInput" placeholder="Search users..." style="margin-bottom:12px; width:220px;">
+  <div id="usersTable"></div>
+  <hr>
+  <div id="addUserSection">
+    <h3>Add New User</h3>
+    <input id="newFullname" placeholder="Full Name">
+    <input id="newUsername" placeholder="Username">
+    <input id="newEmail" placeholder="Email">
+    <input id="newPassword" placeholder="Password" type="password">
+    <button onclick="addUser()" class="btn-gradient">Add User</button>
+  </div>
+</main>
+<script src="js/admin-panel.js"></script>
+</body>
+</html>

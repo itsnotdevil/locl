@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Quotation Calculator — Sun Solar</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header"><div class="brand"><img src="images/logo.png" class="logo"/><div><div class="site-title">Sun Solar</div><div class="site-sub">Get a customised quote</div></div></div>
+  <nav class="main-nav"><ul><li><a href="index.html">Home</a></li><li><a href="quotation-calculator.html" class="active">Quotation</a></li></ul></nav>
+  <div id="userGreeting" class="user-greeting" style="display:none;">
+    <img src="images/pfp.jpg" class="user-avatar" alt="User" />
+    <span id="greetingText"></span>
+    <button id="signOutBtn" class="signout-btn" style="display:none;">Sign Out</button>
+  </div>
+</header>
+
+<main class="container">
+  <h2>Customised Quotation</h2>
+  <p class="muted">Adjust number of panels, panel price, inverter and installation costs to get an estimate. Packages link here will prefill fields.</p>
+
+  <form id="quoteForm" class="card">
+    <label>Number of Panels
+      <input id="panels" type="number" min="1" value="4"/>
+    </label>
+    <label>Panel Price (LKR each)
+      <input id="panelPrice" type="number" value="45000"/>
+    </label>
+    <label>Inverter Price (LKR)
+      <input id="inverterPrice" type="number" value="120000"/>
+    </label>
+    <label>Installation Cost (LKR)
+      <input id="installCost" type="number" value="40000"/>
+    </label>
+
+    <div class="form-actions">
+      <button id="quoteBtn" type="button" class="btn">Calculate Quote</button>
+      <a href="packages.html" class="btn outline" style="margin-left:8px">Back to Packages</a>
+    </div>
+  </form>
+
+  <section id="quoteResult" class="card hidden">
+    <h3>Quotation Summary</h3>
+    <div id="quoteSummary"></div>
+  </section>
+</main>
+
+<footer class="site-footer">© 2025 Sun Solar</footer>
+<script src="js/quotation-calculator.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
